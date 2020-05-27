@@ -12,7 +12,7 @@ body {
     height: 100%;
     width: 900px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #00000033;
   }
 
 #header-image-container {
@@ -22,12 +22,9 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 .header-image {
     max-width: 100%;
     max-height: auto;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .menu {
@@ -45,7 +42,7 @@ body {
 }
 .menu a {
     text-decoration: none;
-    color: #FFCC00;;
+    color: #FFCC00;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
@@ -72,9 +69,10 @@ h2 {
 }
 
 .index-content {
-    padding-top: 30px;
     color: #FFFFFF;
     text-align: center;
+    font-family: 'Lato';
+    padding-top: 30px;
 }
 
 .footer {
@@ -82,7 +80,7 @@ h2 {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #040c15a1;
+    background-color: #040c159a;
     color: #FFCC00;
     text-align: center;
   }
