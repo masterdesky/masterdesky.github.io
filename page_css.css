@@ -1,0 +1,80 @@
+body {
+    background-image: url('source/background-portal.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+#page-wrapper {
+    height: 100%;
+    width: 900px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+#header-image-container {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.menu ul {
+    list-style: none;
+    margin: 8px;
+    padding: 0
+}
+.menu li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.menu a {
+    text-decoration: none;
+    color: #FFCC00;;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Lato';
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: #FFCC00;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Lato';
+    padding-left: 7%;
+}
+
+h2 {
+    color: #FFCC00;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lato';
+    padding-left: 7%;
+}
+
+.index-content {
+    padding-top: 30px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #FFCC00;
+    text-align: center;
+  }
