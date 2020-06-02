@@ -1,5 +1,5 @@
 body {
-    background-image: url('source/background-portal.png');
+    background-image: url('assets/images/backgrounds/background-portal.png');
     background-size: cover;
     background-repeat: repeat-y;
 
@@ -8,6 +8,9 @@ body {
     margin:0;
 }
 
+/*
+##  PAGE BASICS
+*/
 #page-wrapper {
     height: 100%;
     width: 900px;
@@ -27,6 +30,19 @@ body {
     max-height: auto;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #040c159a;
+    color: #FFCC00;
+    text-align: center;
+  }
+
+/*
+##  NAVIGATION BAR
+*/
 .menu {
     text-align: center;
     padding-bottom: 50px;
@@ -52,6 +68,9 @@ body {
     text-decoration: underline;
 }
 
+/*
+##  TEXT CONTENT ON PAGES
+*/
 h1 {
     color: #FFCC00;
     font-size: 36px;
@@ -59,7 +78,6 @@ h1 {
     font-family: 'Lato';
     padding-left: 7%;
 }
-
 h2 {
     color: #FFCC00;
     font-size: 30px;
@@ -67,20 +85,9 @@ h2 {
     font-family: 'Lato';
     padding-left: 7%;
 }
-
 .index-content {
     color: #FFFFFF;
     text-align: center;
     font-family: 'Lato';
     padding-top: 30px;
 }
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #040c159a;
-    color: #FFCC00;
-    text-align: center;
-  }
