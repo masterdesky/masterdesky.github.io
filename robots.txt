@@ -1,0 +1,4 @@
+# Condition 1
+# No bot should curl icons, because why would they gosh
+User-agent: *
+Disallow: ./assets/images/icons/
