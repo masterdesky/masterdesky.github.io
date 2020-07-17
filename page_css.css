@@ -11,6 +11,7 @@ body {
 /*
 ##  PAGE BASICS
 */
+/* Black, transparent rectangle in the center of the page from top to bottom */
 #page-wrapper {
     height: 100%;
     width: 900px;
@@ -18,6 +19,7 @@ body {
     background-color: #00000033;
   }
 
+/* Header image div inside the "page wrapper" transparent rectangle */
 #header-image-container {
     width: 90%;
     text-align: center;
@@ -25,11 +27,13 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+/* Actual header image inside the header image container */
 .header-image {
     max-width: 100%;
     max-height: auto;
 }
 
+/* Footer settings */
 .footer {
     position: fixed;
     left: 0;
