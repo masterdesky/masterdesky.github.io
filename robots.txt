@@ -1,4 +1,9 @@
 # Condition 1
-# No bot should curl icons, because why would they gosh
+# No bot should curl icons because why would they, gosh
 User-agent: *
 Disallow: /assets/images/icons/
+
+# Condition 2
+# Not even the background image jesus
+User-agent: *
+Disallow: /assets/images/backgrounds/
