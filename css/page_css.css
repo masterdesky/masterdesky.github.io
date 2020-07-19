@@ -1,0 +1,90 @@
+body {
+  background-image: url("../assets/images/backgrounds/background-portal.webp");
+  background-size: cover;
+  background-repeat: repeat-y;
+  height: 100vh;
+  padding: 0;
+  margin: 0; }
+
+/*
+##  PAGE BASICS
+*/
+/* Black, transparent rectangle in the center of the page from top to bottom */
+#page-wrapper {
+  height: 100%;
+  width: 900px;
+  margin: 0 auto;
+  background-color: #00000033; }
+
+/* Header image div inside the "page wrapper" transparent rectangle */
+#header-image-container {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+/* Actual header image inside the header image container */
+.header-image {
+  max-width: 100%;
+  max-height: auto; }
+
+/* Footer settings */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #040c159a;
+  color: #FFCC00;
+  text-align: center; }
+
+/*
+##  NAVIGATION BAR
+*/
+.menu {
+  text-align: center;
+  padding-bottom: 5px; }
+
+.menu ul {
+  list-style: none;
+  margin: 8px;
+  padding: 0; }
+
+.menu li {
+  display: inline-block;
+  padding: 0 20px; }
+
+.menu a {
+  text-decoration: none;
+  color: #FFCC00;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Lato'; }
+
+.menu a:hover {
+  text-decoration: underline; }
+
+/*
+##  TEXT CONTENT ON PAGES
+*/
+h1 {
+  color: #FFCC00;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Lato';
+  padding-left: 7%; }
+
+h2 {
+  color: #FFCC00;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Lato';
+  padding-left: 7%; }
+
+.index-content {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Lato';
+  padding-top: 30px; }

@@ -1,0 +1,24 @@
+{
+  "name": "sass-compile",
+  "version": "1.0.0",
+  "description": "Compile my scss files to css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masterdesky/masterdesky.github.io.git"
+  },
+  "author": "Balazs Pal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masterdesky/masterdesky.github.io/issues"
+  },
+  "homepage": "https://github.com/masterdesky/masterdesky.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.2"
+  }
+}
