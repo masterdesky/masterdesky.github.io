@@ -26,7 +26,7 @@ Source of the SCSS:
 .icon-3d {
   padding: 10px;
   font-size: 20px;
-  color: #ffffff; }
+  color: #ffcc00; }
   .icon-3d:hover {
     -webkit-animation: icon3d 200ms infinite;
     animation: icon3d 200ms infinite; }

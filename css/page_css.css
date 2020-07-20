@@ -9,12 +9,12 @@ body {
 /*
 ##  PAGE BASICS
 */
-/* Black, transparent rectangle in the center of the page from top to bottom */
+/* Dark, transparent rectangle in the center of the page from top to bottom */
 #page-wrapper {
   height: 100%;
   width: 900px;
   margin: 0 auto;
-  background-color: #00000033; }
+  background-color: rgba(4, 12, 21, 0.604); }
 
 /* Header image div inside the "page wrapper" transparent rectangle */
 #header-image-container {
@@ -35,8 +35,8 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #040c159a;
-  color: #FFCC00;
+  background-color: rgba(4, 12, 21, 0.604);
+  color: #ffcc00;
   text-align: center; }
 
 /*
@@ -57,7 +57,7 @@ body {
 
 .menu a {
   text-decoration: none;
-  color: #FFCC00;
+  color: #ffcc00;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
@@ -70,21 +70,21 @@ body {
 ##  TEXT CONTENT ON PAGES
 */
 h1 {
-  color: #FFCC00;
+  color: #ffcc00;
   font-size: 36px;
   font-weight: bold;
   font-family: 'Lato';
   padding-left: 7%; }
 
 h2 {
-  color: #FFCC00;
+  color: #ffcc00;
   font-size: 30px;
   font-weight: bold;
   font-family: 'Lato';
   padding-left: 7%; }
 
 .index-content {
-  color: #FFFFFF;
+  color: #fbfbff;
   text-align: center;
   font-family: 'Lato';
   padding-top: 30px; }
