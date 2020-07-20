@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/*
+Basic css for masterdesky.github.io, which generates the general outlook of the site
+
+Original Author
+    Balázs Pál
+    2020 - 
+*/
 body {
   background-image: url("../assets/images/backgrounds/background-portal.webp");
   background-size: cover;
@@ -84,7 +92,7 @@ h2 {
   padding-left: 7%; }
 
 .index-content {
-  color: #fbfbff;
+  color: #fafaff;
   text-align: center;
   font-family: 'Lato';
   padding-top: 30px; }

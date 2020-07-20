@@ -9,7 +9,7 @@ Source of the SCSS:
 */ 
 $redColor: rgba(244,67,54,1);
 $blueColor: rgba(33,150,243,1);
-$baseColor: rgba(255,204,0,1);
+$iconColor: rgba(255,255,238,1);
 
 .flex-center {
   width: 100%;
@@ -32,7 +32,7 @@ $baseColor: rgba(255,204,0,1);
 .icon-3d {
   padding: 10px;
   font-size: 20px;
-  color: $baseColor;
+  color: $iconColor;
   &:hover {
     -webkit-animation: icon3d 200ms infinite;
           animation: icon3d 200ms infinite;
