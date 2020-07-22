@@ -21,9 +21,17 @@
     <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
 
     <!-- Adding MathJax -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        "HTML-CSS": {
+          availableFonts: [],
+          preferredFont: null,
+          webFont: "Latin-Modern"
+        }
+      });
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
     </script>
   </head>
 
@@ -60,7 +68,9 @@
         Content comes here
       </div>
       <div class="footer">
-        <p>Website created and designed by Balázs Pál - &copy; 2020</p>
+        <p>
+          Website created and designed by Balázs Pál - &copy; 2020
+        </p>
       </div> 
     </div>
   </body>

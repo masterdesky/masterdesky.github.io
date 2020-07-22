@@ -9,6 +9,15 @@ $baseColor: rgba(4, 12, 21, 0.604);
 $mainColor: rgba(255,204,0,1);
 $textColor: rgba(250,250,255,1);
 
+/*
+Using Latin Modern font for content
+Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
+*/
+@font-face {
+    font-family: IndexFont;
+    src: url('../assets/fonts/lmroman12-regular.otf');
+  }
+
 body {
     background-image: url('../assets/images/backgrounds/background-portal.webp');
     background-size: cover;
@@ -102,8 +111,9 @@ h2 {
 }
 .index-content {
     color: $textColor;
+    font-size: 20px;
     text-align: left;
-    font-family: 'Lato';
+    font-family: 'IndexFont';
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
