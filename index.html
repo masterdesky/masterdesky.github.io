@@ -19,6 +19,12 @@
     <link rel="icon" href="assets/images/icons/icon.svg">
     <link rel="mask-icon" href="assets/images/icons/mask-icon.svg" color="#000000">
     <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
+
+    <!-- Adding MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
   </head>
 
   <body>
@@ -51,7 +57,12 @@
       <!-- content start -->
       <h1>Welcome!</h1>
       <div class="index-content">
-        Content comes here
+        Content comes here.
+
+        <p>
+          Also, I made \LaTeX working, lel. Watch this:
+          \[ \left( \frac{\hbar^{2}}{2m} \Delta + \hat{V} \right) \Psi \left( \boldsymbol{\hat{r}} \right) = E \Psi \left( \boldsymbol{\hat{r}} \right)\]
+        </p>
       </div>
       <div class="footer">
         <p>Website created and designed by Balázs Pál - &copy; 2020</p>

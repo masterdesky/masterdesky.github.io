@@ -93,6 +93,8 @@ h2 {
 
 .index-content {
   color: #fafaff;
-  text-align: center;
+  text-align: left;
   font-family: 'Lato';
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px; }
