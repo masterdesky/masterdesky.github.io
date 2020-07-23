@@ -6,6 +6,8 @@ Original Author
     Balázs Pál
     2020 - 
 */
+/* Color variables */
+/* Size variable */
 /*
 Using Latin Modern font for content
 Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
@@ -15,7 +17,7 @@ Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
   src: url("../assets/fonts/lmroman12-regular.otf"); }
 
 body {
-  background-image: url("../assets/images/backgrounds/background-portal.webp");
+  background-image: url("../assets/images/background/background-portal.webp");
   background-size: cover;
   background-repeat: repeat-y;
   height: 100vh;
@@ -105,5 +107,5 @@ h2 {
   text-align: left;
   font-family: 'IndexFont';
   padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding-left: 30px;
+  padding-right: 30px; }

@@ -23,15 +23,16 @@
     <!-- Adding MathJax -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
-        "HTML-CSS": {
-          availableFonts: [],
-          preferredFont: null,
-          webFont: "Latin-Modern"
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSymbol.js"],
+        jax: ["input/TeX", "output/SVG"],
+        SVG: {
+          linebreaks: { automatic:true },
+          font: "Latin-Modern"
         }
       });
     </script>
     <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=default">
     </script>
   </head>
 

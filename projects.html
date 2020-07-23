@@ -8,7 +8,7 @@
       content="width=910, initial-scale=1">
     <meta
       name="description"           
-      content="List of my project which I want to share.">
+      content="List of my projects which I want to share.">
     <!-- Add FA icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Add base css to page -->
@@ -23,15 +23,16 @@
     <!-- Adding MathJax -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
-        "HTML-CSS": {
-          availableFonts: [],
-          preferredFont: null,
-          webFont: "Latin-Modern"
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSymbol.js"],
+        jax: ["input/TeX", "output/SVG"],
+        SVG: {
+          linebreaks: { automatic:true },
+          font: "Latin-Modern"
         }
       });
     </script>
     <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=default">
     </script>
   </head>
 
