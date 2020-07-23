@@ -7,14 +7,16 @@ Original Author
     2020 - 
 */
 /* Color variables */
-/* Size variable */
+/* Size variables */
 /*
-Using Latin Modern font for content
+Using 12pt Latin Modern Roman font for content
+(This is the most similar to the standard LaTeX (Computer Modern) font in my opinion)
 Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
 */
 @font-face {
   font-family: IndexFont;
-  src: url("../assets/fonts/lmroman12-regular.otf"); }
+  src: url("../assets/fonts/lmroman12-regular.otf");
+  font-display: swap; }
 
 body {
   background-image: url("../assets/images/background/background-portal.webp");

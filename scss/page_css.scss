@@ -10,16 +10,18 @@ $baseColor: rgba(4, 12, 21, 0.604);
 $mainColor: rgba(255,204,0,1);
 $textColor: rgba(250,250,255,1);
 
-/* Size variable */
+/* Size variables */
 $marginSize: 30px;
 
 /*
-Using Latin Modern font for content
+Using 12pt Latin Modern Roman font for content
+(This is the most similar to the standard LaTeX (Computer Modern) font in my opinion)
 Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
 */
 @font-face {
     font-family: IndexFont;
     src: url('../assets/fonts/lmroman12-regular.otf');
+    font-display: swap;
 }
 
 body {

@@ -26,11 +26,21 @@
     <!-- Adding MathJax -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
-        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSymbol.js"],
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
         jax: ["input/TeX", "output/SVG"],
+        menuSettings: {
+          zoom: "Click"
+        },
         SVG: {
           linebreaks: { automatic:true },
           font: "Latin-Modern"
+        },
+        MathZoom: {
+          styles: {
+            "#MathJax_Zoom": {
+              "background-color": "#040A13"
+            }
+          }
         }
       });
     </script>
