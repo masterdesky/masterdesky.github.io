@@ -54,7 +54,7 @@ body {
 /* Actual header image inside the header image container */
 .header-image {
   max-width: 100%;
-  max-height: auto; }
+  max-height: 100%; }
 
 /* Footer settings */
 .footer {
@@ -138,15 +138,25 @@ hPost {
   font-family: 'Lato';
   padding-left: 7%; }
 
-.fakeimg {
-  color: rgba(4, 12, 21, 0.604);
-  background-color: #fafaff;
-  width: 90%;
-  margin: 0 auto;
-  padding: 20px; }
+.postimg-container {
+  background-color: #00000000;
+  height: 400px;
+  margin: auto; }
 
-/* Add a card effect for articles */
-.card {
+.postimg-container img {
+  color: rgba(4, 12, 21, 0.604);
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block; }
+
+.postDesc {
+  color: #fafaff;
+  font-size: 18px;
+  text-align: justify; }
+
+/* Add a card effect for different posts */
+.post {
   background-color: rgba(4, 12, 21, 0.604);
   width: 80%;
   padding-top: 30px;
@@ -158,3 +168,16 @@ hPost {
   margin-bottom: 60px;
   box-shadow: 4px 7px 15px 0px rgba(250, 250, 255, 0.4);
   /* h-offset  v-offset  blur  spread  color */ }
+
+/* Configure post links */
+.post a:link {
+  text-decoration: none; }
+
+.post a:visited {
+  text-decoration: none; }
+
+.post a:hover {
+  text-decoration: underline; }
+
+.post a:active {
+  text-decoration: underline; }
