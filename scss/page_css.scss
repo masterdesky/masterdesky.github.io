@@ -127,7 +127,7 @@ h2 {
     padding-left: 7%;
 }
 h3 {
-    color: $textColor;
+    color: $mainColor;
     font-size: 25px;
     font-weight: bold;
     font-family: 'Lato';
@@ -147,8 +147,16 @@ h3 {
 ## POST CARDS
 */
 /* Fake image */
+hPost {
+    color: $textColor;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lato';
+    padding-left: 7%;
+}
 .fakeimg {
-    background-color: #aaaaaa;
+    color: $baseColor;
+    background-color: $textColor;
     width: 90%;
     margin: 0 auto;
     padding: 20px;
@@ -158,7 +166,7 @@ h3 {
 .card {
     background-color: $baseColor;
     width: 80%;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 30px;

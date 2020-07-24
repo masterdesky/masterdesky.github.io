@@ -112,7 +112,7 @@ h2 {
   padding-left: 7%; }
 
 h3 {
-  color: #fafaff;
+  color: #ffcc00;
   font-size: 25px;
   font-weight: bold;
   font-family: 'Lato';
@@ -131,8 +131,16 @@ h3 {
 ## POST CARDS
 */
 /* Fake image */
+hPost {
+  color: #fafaff;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Lato';
+  padding-left: 7%; }
+
 .fakeimg {
-  background-color: #aaaaaa;
+  color: rgba(4, 12, 21, 0.604);
+  background-color: #fafaff;
   width: 90%;
   margin: 0 auto;
   padding: 20px; }
@@ -141,7 +149,7 @@ h3 {
 .card {
   background-color: rgba(4, 12, 21, 0.604);
   width: 80%;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 30px;
