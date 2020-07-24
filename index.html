@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <title>masterdesky</title>
+    <meta
+      name="description"           
+      content="Homepage of my personal website. Enjoy.">
     <!-- Viewport width is slightly bigger, than the page wrapper -->
     <meta 
       name="viewport"
       content="width=910, initial-scale=1">
-    <meta
-      name="description"           
-      content="Homepage of my personal website. Enjoy.">
     <!-- Add FA icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Add base css to page -->
@@ -25,6 +25,11 @@
       MathJax.Hub.Config({
         extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
         jax: ["input/TeX", "output/SVG"],
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+        },
         menuSettings: {
           zoom: "Click"
         },
@@ -67,10 +72,10 @@
 
       <!-- Social media icons -->
       <div class="flex-center">
-        <a href="https://github.com/masterdesky/" alt="GitHub"><i class="fa fa-github fa-4x icon-3d"></i></a>
-        <a href="https://www.youtube.com/channel/UCBDSB7PdQ3E9l9WSBsTy7cQ/" alt="YouTube"><i class="fa fa-youtube-play fa-4x icon-3d"></i></a>
-        <a href="https://www.instagram.com/masterdesky/" alt="Instagram"><i class="fa fa-instagram fa-4x icon-3d"></i></a>
-        <a href="https://twitter.com/masterdesky/" alt="Twitter"><i class="fa fa-twitter fa-4x icon-3d"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/masterdesky/" alt="GitHub"><i class="fa fa-github fa-4x icon-3d"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCBDSB7PdQ3E9l9WSBsTy7cQ/" alt="YouTube"><i class="fa fa-youtube-play fa-4x icon-3d"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/masterdesky/" alt="Instagram"><i class="fa fa-instagram fa-4x icon-3d"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/masterdesky/" alt="Twitter"><i class="fa fa-twitter fa-4x icon-3d"></i></a>
       </div>
 
       <!-- content start -->
@@ -78,7 +83,7 @@
       <div class="index-content">
         Content comes here.
         <p>
-          Also, I made \LaTeX working, lel. Watch this:
+          Also, I made $\LaTeX$ working, lel. Watch this:
           $$\left( \frac{\hbar^{2}}{2m} \Delta + \hat{V} \right) \Psi \left( \boldsymbol{\hat{r}} \right) = E \Psi \left( \boldsymbol{\hat{r}} \right)$$
         </p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam non quam lacus suspendisse faucibus interdum. Mattis molestie a iaculis at erat pellentesque. Mi eget mauris pharetra et. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum. Cursus turpis massa tincidunt dui. Enim diam vulputate ut pharetra. Nulla facilisi etiam dignissim diam quis enim lobortis. Amet dictum sit amet justo donec enim diam vulputate. Velit scelerisque in dictum non consectetur a erat nam at. Egestas erat imperdiet sed euismod nisi. Fermentum dui faucibus in ornare quam. Ultrices in iaculis nunc sed augue lacus viverra vitae. Quam elementum pulvinar etiam non quam. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Eget nunc scelerisque viverra mauris in aliquam sem.</p>

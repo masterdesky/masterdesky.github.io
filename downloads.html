@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
     <title>masterdesky</title>
-    <!-- Viewport width is slightly bigger, than the page wrapper -->
-    <meta 
-      name="viewport"
-      content="width=910, initial-scale=1">
     <meta
       name="description"           
       content="Downloadable content, I don't really know what
                will they be... Physics lecture notes for uni?
                Minecraft maps with CoreProtect files? Maybe goverment secrets?
                Who knows...">
+    <!-- Viewport width is slightly bigger, than the page wrapper -->
+    <meta 
+      name="viewport"
+      content="width=910, initial-scale=1">
     <!-- Add FA icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Add base css to page -->
@@ -28,6 +28,11 @@
       MathJax.Hub.Config({
         extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
         jax: ["input/TeX", "output/SVG"],
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+        },
         menuSettings: {
           zoom: "Click"
         },
@@ -70,16 +75,16 @@
 
       <!-- Social media icons -->
       <div class="flex-center">
-        <a href="https://github.com/masterdesky/" alt="GitHub"><i class="fa fa-github fa-4x icon-3d"></i></a>
-        <a href="https://www.youtube.com/channel/UCBDSB7PdQ3E9l9WSBsTy7cQ/" alt="YouTube"><i class="fa fa-youtube-play fa-4x icon-3d"></i></a>
-        <a href="https://www.instagram.com/masterdesky/" alt="Instagram"><i class="fa fa-instagram fa-4x icon-3d"></i></a>
-        <a href="https://twitter.com/masterdesky/" alt="Twitter"><i class="fa fa-twitter fa-4x icon-3d"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/masterdesky/" alt="GitHub"><i class="fa fa-github fa-4x icon-3d"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCBDSB7PdQ3E9l9WSBsTy7cQ/" alt="YouTube"><i class="fa fa-youtube-play fa-4x icon-3d"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/masterdesky/" alt="Instagram"><i class="fa fa-instagram fa-4x icon-3d"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/masterdesky/" alt="Twitter"><i class="fa fa-twitter fa-4x icon-3d"></i></a>
       </div>
 
       <!-- content start -->
       <h1>Downloads</h1>
       <div class="index-content">
-        Content comes here
+        Content comes here.
       </div>
       <div class="footer">
         <p>
