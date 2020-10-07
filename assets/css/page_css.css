@@ -15,7 +15,7 @@ Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
 */
 @font-face {
   font-family: IndexFont;
-  src: url("../assets/fonts/lmroman12-regular.otf");
+  src: url("../fonts/lmroman12-regular.otf");
   font-display: swap; }
 
 html {
@@ -23,7 +23,7 @@ html {
   position: relative; }
 
 body {
-  background-image: url("../assets/images/background/background-portal.webp");
+  background-image: url("../images/background/background-portal.webp");
   background-size: cover;
   background-repeat: repeat-y;
   height: 100%;
@@ -155,7 +155,7 @@ hPost {
   font-size: 18px;
   text-align: justify; }
 
-/* Add a card effect for different posts */
+/* Add a "floating card" effect for different posts */
 .post {
   background-color: rgba(4, 12, 21, 0.604);
   width: 80%;

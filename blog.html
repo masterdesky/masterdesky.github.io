@@ -1,0 +1,27 @@
+---
+layout: default
+title: Blog
+content_desc: List of blogposts on my page!
+---
+<h1>Latest Posts</h1>
+<div class="index-content">
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <div class="post">
+          <a href="{{ post.url }}">
+            <hPost>{{ post.title }}</hPost>
+          </a>
+          <p class="postDesc">
+            {{ post.excerpt }}
+          </p>
+          <div class="postimg-container">
+            <a href="{{ post.url }}">
+              <img src="{{ post.featured-image }}" alt="{{ post.featured-image-alt }}"></img>
+            </a>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
