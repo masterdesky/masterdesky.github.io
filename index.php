@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>masterdesky</title>
     <meta
       name="description"           
       content="Homepage of my personal website. Enjoy.">
+    <title>masterdesky</title>
     <!-- Viewport width is slightly bigger, than the page wrapper -->
     <meta 
       name="viewport"
