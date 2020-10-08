@@ -10,6 +10,7 @@ $baseColor: rgba(4, 12, 21, 0.604);
 $mainColor: rgba(255,204,0,1);
 $postColor: rgba(255,255,238,1);
 $textColor: rgba(250,250,255,1);
+$linkClickColor: rgba(175,137,190,1);
 $shadowColor: rgba(250,250,255,0.4);
 
 /* Size variables */
@@ -52,7 +53,7 @@ body {
     right: 0;
     left: 0;
     margin: auto;
-    overflow: hidden;
+    overflow: visible;
     background-color: $baseColor;
   }
 
@@ -98,7 +99,17 @@ body {
     display: inline-block;
     padding: 0 20px;
 }
-.menu a {
+
+/* Menu links */
+.menu a:link {
+    text-decoration: none;
+    color: $mainColor;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Lato';
+}
+.menu a:visited {
     text-decoration: none;
     color: $mainColor;
     text-transform: uppercase;
@@ -109,6 +120,11 @@ body {
 .menu a:hover {
     text-decoration: underline;
 }
+.menu a:active {
+    text-decoration: underline;
+    color: $linkClickColor;
+}
+
 
 /*
 ##  TEXT CONTENT ON PAGES
@@ -151,9 +167,11 @@ h4 {
     margin: $marginSize;
 }
 
-/*
-## POST CARDS
-*/
+// #############################
+//
+//    POST CARDS
+//
+// #############################
 /* Fake image */
 hPost {
     color: $postColor;
@@ -201,19 +219,54 @@ hPost {
     box-shadow: 4px 7px 15px 0px $shadowColor; /* h-offset  v-offset  blur  spread  color */
 }
 
-/* Configure post links */
-.post a:link {
-    text-decoration: none;
+/* Style for list of references */
+.references ol {
+    counter-reset: item;
+    margin-left: 0;
+    padding-left: 0;
+}
+.references li {
+    display: block;
+    margin-bottom: .5em;
+    margin-left: 2em;
+}
+.references li::before {
+    display: inline-block;
+    content: "[" counter(item) "] : ";
+    counter-increment: item;
+    color: $mainColor;
+    font-family: 'Lato';
+    width: 2em;
+    margin-left: -2em;
 }
 
-.post a:visited {
+/* Configure general links */
+a:link {
     text-decoration: none;
+    color: $mainColor;
 }
-
-.post a:hover {
+a:visited {
+    text-decoration: none;
+    color: $mainColor;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: $linkClickColor;
     text-decoration: underline;
 }
 
+/* Post links */
+.post a:link {
+    text-decoration: none;
+}
+.post a:visited {
+    text-decoration: none;
+}
+.post a:hover {
+    text-decoration: underline;
+}
 .post a:active {
     text-decoration: underline;
 }

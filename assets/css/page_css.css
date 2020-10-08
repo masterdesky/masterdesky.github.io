@@ -40,7 +40,7 @@ body {
   right: 0;
   left: 0;
   margin: auto;
-  overflow: hidden;
+  overflow: visible;
   background-color: rgba(4, 12, 21, 0.604); }
 
 /* Header image div inside the "page wrapper" transparent rectangle */
@@ -83,7 +83,16 @@ body {
   display: inline-block;
   padding: 0 20px; }
 
-.menu a {
+/* Menu links */
+.menu a:link {
+  text-decoration: none;
+  color: #ffcc00;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Lato'; }
+
+.menu a:visited {
   text-decoration: none;
   color: #ffcc00;
   text-transform: uppercase;
@@ -93,6 +102,10 @@ body {
 
 .menu a:hover {
   text-decoration: underline; }
+
+.menu a:active {
+  text-decoration: underline;
+  color: #af89be; }
 
 /*
 ##  TEXT CONTENT ON PAGES
@@ -134,9 +147,6 @@ h4 {
   padding-bottom: 50px;
   margin: 30px; }
 
-/*
-## POST CARDS
-*/
 /* Fake image */
 hPost {
   color: #ffffee;
@@ -184,7 +194,43 @@ hPost {
   box-shadow: 4px 7px 15px 0px rgba(250, 250, 255, 0.4);
   /* h-offset  v-offset  blur  spread  color */ }
 
-/* Configure post links */
+/* Style for list of references */
+.references ol {
+  counter-reset: item;
+  margin-left: 0;
+  padding-left: 0; }
+
+.references li {
+  display: block;
+  margin-bottom: .5em;
+  margin-left: 2em; }
+
+.references li::before {
+  display: inline-block;
+  content: "[" counter(item) "] : ";
+  counter-increment: item;
+  color: #ffcc00;
+  font-family: 'Lato';
+  width: 2em;
+  margin-left: -2em; }
+
+/* Configure general links */
+a:link {
+  text-decoration: none;
+  color: #ffcc00; }
+
+a:visited {
+  text-decoration: none;
+  color: #ffcc00; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:active {
+  color: #af89be;
+  text-decoration: underline; }
+
+/* Post links */
 .post a:link {
   text-decoration: none; }
 
