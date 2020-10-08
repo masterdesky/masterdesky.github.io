@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/*
+CSS for blog posts on masterdesky.github.io
+
+Original Author
+    Balázs Pál
+    2020 - 
+*/
+/*
+Different globally used variable for the SASS/SCSS of masterdesky.github.io
+
+Original Author
+    Balázs Pál
+    2020 - 
+*/
+/* Color variables */
+/* Size variables */
+hPost {
+  color: #ffffee;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: 'Lato';
+  padding-left: 7%; }
+
+.post-ul {
+  list-style-type: none; }
+
+.postimg-container {
+  background-color: #00000000;
+  height: 400px;
+  margin: auto; }
+
+.postimg-container img {
+  color: rgba(4, 12, 21, 0.604);
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block; }
+
+.postDate {
+  color: #fafaff;
+  font-size: 18px;
+  text-align: right; }
+
+.postDesc {
+  color: #fafaff;
+  font-size: 18px;
+  text-align: justify; }
+
+/* Add a "floating card" effect for different posts */
+.post {
+  background-color: rgba(4, 12, 21, 0.604);
+  width: 80%;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-bottom: 60px;
+  box-shadow: 4px 7px 15px 0px rgba(250, 250, 255, 0.4);
+  /* h-offset  v-offset  blur  spread  color */ }
+
+.post-image {
+  width: 90%;
+  text-align: center;
+  margin: auto; }
+
+.post-image input[type=checkbox] {
+  display: none; }
+
+.post-image img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.25s ease;
+  cursor: zoom-in; }
+
+.post-image input[type=checkbox]:checked ~ img {
+  transform: scale(2);
+  cursor: zoom-out; }
+
+figcaption {
+  font-size: 18px; }
+
+.img-source {
+  font-size: 16px;
+  margin-top: 10px; }
