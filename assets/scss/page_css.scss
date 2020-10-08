@@ -8,6 +8,7 @@ Original Author
 /* Color variables */
 $baseColor: rgba(4, 12, 21, 0.604);
 $mainColor: rgba(255,204,0,1);
+$postColor: rgba(255,255,238,1);
 $textColor: rgba(250,250,255,1);
 $shadowColor: rgba(250,250,255,0.4);
 
@@ -117,21 +118,28 @@ h1 {
     font-size: 36px;
     font-weight: bold;
     font-family: 'Lato';
-    padding-left: 7%;
+    padding-left: 3%;
 }
 h2 {
     color: $mainColor;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Lato';
-    padding-left: 7%;
+    padding-left: 4%;
 }
 h3 {
     color: $mainColor;
     font-size: 25px;
     font-weight: bold;
     font-family: 'Lato';
-    padding-left: 7%;
+    padding-left: 5%;
+}
+h4 {
+    color: $mainColor;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lato';
+    padding-left: 6%;
 }
 .index-content {
     color: $textColor;
@@ -148,11 +156,14 @@ h3 {
 */
 /* Fake image */
 hPost {
-    color: $textColor;
-    font-size: 25px;
+    color: $postColor;
+    font-size: 23px;
     font-weight: bold;
     font-family: 'Lato';
     padding-left: 7%;
+}
+.post-ul {
+    list-style-type: none;
 }
 .postimg-container {
     background-color: #00000000;
@@ -166,13 +177,16 @@ hPost {
     margin: auto;
     display: block;
 }
-
+.postDate {
+    color: $textColor;
+    font-size: 18px;
+    text-align: right;
+}
 .postDesc {
     color: $textColor;
     font-size: 18px;
     text-align: justify;
 }
-
 /* Add a "floating card" effect for different posts */
 .post {
     background-color: $baseColor;

@@ -102,21 +102,28 @@ h1 {
   font-size: 36px;
   font-weight: bold;
   font-family: 'Lato';
-  padding-left: 7%; }
+  padding-left: 3%; }
 
 h2 {
   color: #ffcc00;
   font-size: 30px;
   font-weight: bold;
   font-family: 'Lato';
-  padding-left: 7%; }
+  padding-left: 4%; }
 
 h3 {
   color: #ffcc00;
   font-size: 25px;
   font-weight: bold;
   font-family: 'Lato';
-  padding-left: 7%; }
+  padding-left: 5%; }
+
+h4 {
+  color: #ffcc00;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Lato';
+  padding-left: 6%; }
 
 .index-content {
   color: #fafaff;
@@ -132,11 +139,14 @@ h3 {
 */
 /* Fake image */
 hPost {
-  color: #fafaff;
-  font-size: 25px;
+  color: #ffffee;
+  font-size: 23px;
   font-weight: bold;
   font-family: 'Lato';
   padding-left: 7%; }
+
+.post-ul {
+  list-style-type: none; }
 
 .postimg-container {
   background-color: #00000000;
@@ -149,6 +159,11 @@ hPost {
   max-height: 100%;
   margin: auto;
   display: block; }
+
+.postDate {
+  color: #fafaff;
+  font-size: 18px;
+  text-align: right; }
 
 .postDesc {
   color: #fafaff;
