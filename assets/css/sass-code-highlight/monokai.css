@@ -84,7 +84,9 @@
 
 code {
   background-color: "#282C34";
-  color: whitesmoke; }
+  color: whitesmoke;
+  padding: 20px;
+  font-size: 16px; }
 
 pre {
   background-color: "#282C34";
