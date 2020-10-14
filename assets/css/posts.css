@@ -100,6 +100,9 @@ figcaption {
   text-decoration: underline; }
 
 /* Style for list of references */
+.references {
+  font-size: 17px; }
+
 .references ol {
   counter-reset: item;
   margin-left: 0;
@@ -107,7 +110,6 @@ figcaption {
 
 .references li {
   display: block;
-  font-size: 15px;
   margin-bottom: .5em;
   margin-left: 2em; }
 
@@ -120,8 +122,9 @@ figcaption {
   width: 2em;
   margin-left: -2em; }
 
+/* Style for embed videos */
 iframe {
   display: block;
   margin: 0 auto;
   width: 80%;
-  height: 360px; }
+  height: 400px; }
