@@ -108,6 +108,7 @@ figcaption {
 }
 .references li {
   display: block;
+  font-size: 15px;
   margin-bottom: .5em;
   margin-left: 2em;
 }
@@ -116,7 +117,6 @@ figcaption {
   content: "[" counter(item) "] : ";
   counter-increment: item;
   color: $mainColor;
-  font-size: 15px;
   font-family: 'Lato';
   width: 2em;
   margin-left: -2em;
