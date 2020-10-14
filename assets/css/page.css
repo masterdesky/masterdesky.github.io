@@ -10,7 +10,7 @@ Original Author
 Different globally used variable for the SASS/SCSS of masterdesky.github.io
 
 Original Author
-    Balázs Pál
+    Balázs Pált
     2020 - 
 */
 /* Color variables */
@@ -100,14 +100,16 @@ Original Author
     color: #a6e22e; }
 
 code {
-  background-color: "#282C34";
+  background-color: #272822;
   color: whitesmoke;
-  padding: 20px;
-  font-size: 16px; }
+  font-size: 14px;
+  padding: 0px; }
 
 pre {
-  background-color: "#282C34";
-  color: whitesmoke; }
+  background-color: "#272822";
+  color: whitesmoke;
+  padding: 15px;
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace; }
 
 /*
 Using 12pt Latin Modern Roman font for content text
@@ -248,27 +250,6 @@ h4 {
   padding-bottom: 50px;
   margin: 30px; }
 
-/* Fake image */
-/* Style for list of references */
-.references ol {
-  counter-reset: item;
-  margin-left: 0;
-  padding-left: 0; }
-
-.references li {
-  display: block;
-  margin-bottom: .5em;
-  margin-left: 2em; }
-
-.references li::before {
-  display: inline-block;
-  content: "[" counter(item) "] : ";
-  counter-increment: item;
-  color: #ffcc00;
-  font-family: 'Lato';
-  width: 2em;
-  margin-left: -2em; }
-
 /* Configure general links */
 a:link {
   text-decoration: none;
@@ -283,17 +264,4 @@ a:hover {
 
 a:active {
   color: #af89be;
-  text-decoration: underline; }
-
-/* Post links */
-.post a:link {
-  text-decoration: none; }
-
-.post a:visited {
-  text-decoration: none; }
-
-.post a:hover {
-  text-decoration: underline; }
-
-.post a:active {
   text-decoration: underline; }

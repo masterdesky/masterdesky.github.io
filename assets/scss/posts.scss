@@ -85,3 +85,45 @@ figcaption {
   font-size: 16px;
   margin-top: 10px;
 }
+
+/* Post links */
+.post a:link {
+  text-decoration: none;
+}
+.post a:visited {
+  text-decoration: none;
+}
+.post a:hover {
+  text-decoration: underline;
+}
+.post a:active {
+  text-decoration: underline;
+}
+
+/* Style for list of references */
+.references ol {
+  counter-reset: item;
+  margin-left: 0;
+  padding-left: 0;
+}
+.references li {
+  display: block;
+  margin-bottom: .5em;
+  margin-left: 2em;
+}
+.references li::before {
+  display: inline-block;
+  content: "[" counter(item) "] : ";
+  counter-increment: item;
+  color: $mainColor;
+  font-family: 'Lato';
+  width: 2em;
+  margin-left: -2em;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 360px;
+}
