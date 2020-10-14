@@ -14,7 +14,7 @@ The GADGET-2 (<i>GAlaxies with Dark matter and Gas intEracT</i> - 2) is the name
 ### Download necessary files
 First of all, if you want to work with the GADGET-2 software, I advise you to consider using a computer running under Linux or MacOS. However it is possible to install GADGET-2 on Windows (somehow), it is much easier to do it on Linux, or Mac. Also in this tutorial, all the steps will be done on a Linux computer. Since there are numerous different Linux distributions out there, and because I'm particularly running Kali Linux, there is a slight chance for errors and anomalies to occur on systems other than mine. This tutorial is completely optimized to run on my system in particular, but $99.9\%$ that it will run on other Linux systems too. Also I'll only go into details of the manual installation from sources, without using Homebrew, or other similar package managers (except for HDF5).
 
-As it is also noted in [User guide](https://wwwmpa.mpa-garching.mpg.de/gadget/users-guide.pdf) of GADGET-2, there are some non-standard libraries, which you'll need to install first to compile GADGET-2 successfully. Download the following softwares:
+As it is noted in the [User guide](https://wwwmpa.mpa-garching.mpg.de/gadget/users-guide.pdf) of GADGET-2, there are some non-standard libraries, which you'll need to install first to compile GADGET-2 successfully. Download the following libraries and softwares:
 1. [Gadget 2.0.7](https://wwwmpa.mpa-garching.mpg.de/gadget/gadget-2.0.7.tar.gz) (Latest version)
 2. [MPICH >1.0](http://www.mpich.org/static/downloads/3.3.2/mpich-3.3.2.tar.gz) (3.3.2 here, latest version currently)
 3. [GSL 1.9](ftp://ftp.gnu.org/gnu/gsl/gsl-1.9.tar.gz) (Didn't tested later versions)
@@ -22,7 +22,7 @@ As it is also noted in [User guide](https://wwwmpa.mpa-garching.mpg.de/gadget/us
 5. HDF5 >5.0 (Downloaded and installed from terminal, detailed in the next section)
 
 ### Install prerequisites
-First you'll need to extract all the (yet only 4) downloaded softwares. Considering, that you've downloaded them in the directory `~/Downloads/`, you can unzip all packages by the following commands after opening a terminal there:
+First you'll need to extract all the (currently only 4) downloaded zipped files. Considering, that you've downloaded them in the directory `~/Downloads/`, you can unzip all packages by the following commands after opening a terminal there:
 ```bash
 user@hostname:~/Downloads/$ tar -xzf gadget-2.0.7.tar.gz
 user@hostname:~/Downloads/$ tar -xzf mpich-3.3.2.tar.gz
@@ -53,7 +53,7 @@ user@hostname:~/Downloads/mpich-3.3.2/$ ./configure -prefix=/path/to/mpich-insta
 ```
 Throughout the tutorial I'll use the default install location for MPICH. For other configuration options refer to the Install guide above.
 
-After the configuration you can finally build MPICH with make and write the terminal logs to a file called `m.txt`, again, for the purpose of diagnostics in case of build errors:
+After the configuration you can finally build MPICH with `make` and write the terminal logs to a file called `m.txt`, again, for the purpose of diagnostics in case of build errors:
 
 ```bash
 user@hostname:~/Downloads/mpich-3.3.2/$ make |& tee m.txt
@@ -149,6 +149,7 @@ Again, similarly to the previous installations, build the FFTW library with `mak
 ```bash
 user@hostname:~/Downloads/fftw-2.1.5/$ make |& tee m.txt
 user@hostname:~/Downloads/fftw-2.1.5/$ sudo make |& tee mi.txt
+[sudo] password:
 ```
 If the installation finished successfully, you can quit this directory too.
 
@@ -158,7 +159,9 @@ Installing HDF5 on Debian-based distributions (including Ubuntu) could be done b
 
 ```bash
 user@hostname:~/ sudo apt-get install libhdf5-dev
+[sudo] password:
 user@hostname:~/ sudo apt-get update
+[sudo] password:
 ```
 
 ## II. Installing GADGET-2
@@ -169,12 +172,12 @@ user@hostname:~/ mkdir GADGET2
 user@hostname:~/ cp Downloads/Gadget-2.0.7/* GADGET2/
 user@hostname:~/ cd GADGET2/Gadget2
 ```
-GADGET-2 itself has a lot of compilation parameters, which needs to be edited first to build the software correctly. Open the `Makefile`, situated here with a editor tool of your choice (vim/nano/gedit/emacs/etc.). You'll need to focus on the first part of this file, since there is the compilation parameters and switches stored. This first part could be split into two smaller pieces. The first one is where you can set the options used by this particular GADGET-2 build in your upcoming simulations. Edit your `Makefile` by activating/deactivating options with `#` symbols, to make it look like the table below. You probably need to add the line
+GADGET-2 itself has a lot of compilation parameters, which needs to be edited first to build the software correctly. Open the `Makefile`, situated here with an editor tool of your choice (vim/nano/gedit/emacs/etc.). You'll need to focus on the first part of this file, since there are the compilation parameters and switches situated. This first part could be split into two smaller pieces. The first one is where you can set the options used by this particular GADGET-2 build in your upcoming simulations. Edit your `Makefile` by activating/deactivating options with `#` symbols, to make it look like the table below. You need to add the line
 
 ```make
 OPT   +=  -DH5_USE_16_API
 ```
-to the table manually. It is sometimes needed to omit errors, which arises from the lack of backward compatibility in newer HDF5 builds. The table which you need to replicate is the following:
+to the table manually, because it is not present in the `Makefile` by default. It is sometimes needed to omit errors, which arises from the lack of backward compatibility in newer HDF5 builds. The table which you need to replicate is the following:
 
 ```make
 #----------------------------------------------------------------------
@@ -368,7 +371,7 @@ Which I set to $0.01$ for my simulation. Also I increased the `TimeMax` value to
 ```bash
 TimeMax	            8.0        % End of the simulation
 ```
-With these values the final snapshot files were loaded in `Python` with the `h5py` library and was animated using `matplotlib`'s built-in animation functionality. The final video can be seen on this YouTube video:
+With these values the final snapshot files were loaded in `Python` with the `h5py` library and was animated using `matplotlib`'s built-in animation functionality. The final animation can be seen on this YouTube video:
 
 
 <iframe src="https://www.youtube.com/embed/KW0yIkPPymI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
