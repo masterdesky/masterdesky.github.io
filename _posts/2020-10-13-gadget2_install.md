@@ -12,11 +12,9 @@ The GADGET-2 (<i>GAlaxies with Dark matter and Gas intEracT</i> - 2) is the name
 
 ## I. Prerequisites
 ### Download necessary files
-First of all, if you want to work with the GADGET-2 software, I advise you to consider using a computer with Linux or MacOS installed on it. However it is possible to install it on Windows (somehow), it is much easier to do it on Linux/Mac. Also in this tutorial, all the steps will be done on a Linux computer.
+First of all, if you want to work with the GADGET-2 software, I advise you to consider using a computer running under Linux or MacOS. However it is possible to install GADGET-2 on Windows (somehow), it is much easier to do it on Linux, or Mac. Also in this tutorial, all the steps will be done on a Linux computer. Since there are numerous different Linux distributions out there, and because I'm particularly running Kali Linux, there is a slight chance for errors and anomalies to occur on systems other than mine. This tutorial is completely optimized to run on my system in particular, but $99.9\%$ that it will run on other Linux systems too. Also I'll only go into details of the manual installation from sources, without using Homebrew, or other similar package managers (except for HDF5).
 
-If you run Linux or UNIX, you already have all the necessary `C` compilers needed for the task. Since there are numerous different Linux distributions out there, and because I'm particularly running Kali Linux, there is a slight chance for errors and anomalies to occur on other systems than mine. This tutorial is completely optimized to run on my system, but $99.9\%$ that it will run on other Linux systems too. Also I'll only go into details of the manual installation, without using Homebrew, or other similar package managers.
-
-As it was noted in user guide of GADGET-2, there are some non-standard libraries, which you'll need to install first to compile GADGET-2 successfully. Download the following softwares:
+As it is also noted in [User guide](https://wwwmpa.mpa-garching.mpg.de/gadget/users-guide.pdf) of GADGET-2, there are some non-standard libraries, which you'll need to install first to compile GADGET-2 successfully. Download the following softwares:
 1. [Gadget 2.0.7](https://wwwmpa.mpa-garching.mpg.de/gadget/gadget-2.0.7.tar.gz) (Latest version)
 2. [MPICH >1.0](http://www.mpich.org/static/downloads/3.3.2/mpich-3.3.2.tar.gz) (3.3.2 here, latest version currently)
 3. [GSL 1.9](ftp://ftp.gnu.org/gnu/gsl/gsl-1.9.tar.gz) (Didn't tested later versions)
