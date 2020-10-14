@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Balázs Pál
-title : Intalling and running GADGET-2 on Linux - 2020
+title : Installing and running GADGET-2 on Linux - 2020
 date: 2020-10-12T00:10:00Z
 featured-image: ../assets/images/posts/gadget2/millennium.jpg
 featured-image-alt: The famous Millennium Simulation of GADGET2 from 2005
