@@ -359,7 +359,7 @@ ComovingIntegrationOn    0
 ```
 This will tell the simulation to save snapshot files in `.hdf5` format which can be handled with Python later.
 
-GADGET-2 works in a way, that it saves "snapshots" of the simulation in a given interval. The shorter this interval, the more better and continuous our sample will be. The length of this can be changed in the line
+GADGET-2 works by taking a "snapshot" of the simulation at certain intervals, and saving the coordinates and velocities of the simulated particles into a file. The shorter this interval is, the better and more continuous our sample will be. The length of this can be changed in the line
 
 ```bash
 % Output frequency
@@ -371,6 +371,13 @@ Which I set to $0.01$ for my simulation. Also I increased the `TimeMax` value to
 ```bash
 TimeMax	            8.0        % End of the simulation
 ```
+After all parameters were set, you can run the code with the following command, by invoking the `Gadget2` executable in your directory with the parameter file copied into:
+
+```bash
+user@hostname:~/GADGET2/Simulations/galaxy/$ mpirun -np 4 ./Gadget2 galaxy.param
+```
+The number after the `-np` switch defines on how many CPU cores GADGET-2 will use for the simulation. Since my CPU has 4 cores, I set the values for the `-np` switch accordingly. GADGET-2 will create a lot of debug and helper files in the same directory, along all of the snapshot files.
+
 With these values the final snapshot files were loaded in `Python` with the `h5py` library and was animated using `matplotlib`'s built-in animation functionality. The final animation can be seen on this YouTube video:
 
 
