@@ -2,7 +2,7 @@
 layout: post
 author: Balázs Pál
 title : Installing and running GADGET-2 on Linux - 2020
-date: 2020-10-12T00:10:00Z
+date: 2020-10-12T00:10:00Z+02:00
 featured-image: ../assets/images/posts/gadget2/millennium.jpg
 featured-image-alt: The famous Millennium Simulation of GADGET2 from 2005
 ---
@@ -148,7 +148,7 @@ Again, similarly to the previous installations, build the FFTW library with `mak
 
 ```bash
 user@hostname:~/Downloads/fftw-2.1.5/$ make |& tee m.txt
-user@hostname:~/Downloads/fftw-2.1.5/$ sudo make |& tee mi.txt
+user@hostname:~/Downloads/fftw-2.1.5/$ sudo make install |& tee mi.txt
 [sudo] password:
 ```
 If the installation finished successfully, you can quit this directory too.

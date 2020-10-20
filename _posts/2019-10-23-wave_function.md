@@ -2,7 +2,7 @@
 layout: post
 author: Balázs Pál
 title : Wave function of Hydrogen atom
-date: 2019-10-23T10:00:00Z
+date: 2019-10-23T10:00:00Z+02:00
 featured-image: ../assets/images/posts/wave_function/orbit_n_3-l_2-m_1.png
 featured-image-alt: Image of the wave function for nlm = 321
 ---
