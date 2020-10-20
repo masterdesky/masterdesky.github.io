@@ -142,7 +142,7 @@ Similarly to the MPICH and GSL installation, first you should run the configurat
 user@hostname:~/Downloads/fftw-2.1.5/$ ./configure -prefix=/path/to/install-fftw\
                                  --enable-mpi --enable-type-prefix --enable-float |& tee c.txt
 ```
-Omit the `-prefix` switch to install FFTW to the default location. Here the `\` marker means, this code is actually a single line, but it would overflow the margin of the page without splitting it into two rows. Also, FFTW is needed to use the `--enable-mpi` switch during the configuration, that's one of the reasons, why that should be installed first.
+Omit the `-prefix` switch to install FFTW to the default location. Here the `\` marker means, this code is actually a single line, but it would overflow the margin of the page without splitting it into two rows. Also, FFTW needs to use the `--enable-mpi` switch during the configuration, that's one of the reasons, why that should be installed first.
 
 Again, similarly to the previous installations, build the FFTW library with `make` and then install it as `sudo`:
 
