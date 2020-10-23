@@ -90,6 +90,17 @@ hPost {
   cursor: zoom-out
 }
 
+.post-content {
+  color: $textColor;
+  font-size: $stdFontSize;
+  text-align: justify;
+  text-indent: 1.5em;
+  font-family: 'IndexFont';
+  padding-top: 30px;
+  padding-bottom: $footerHeight;
+  margin: $marginSize;
+}
+
 // Related to captioning images inside the page wrapper
 figcaption {
   font-size: 18px;
@@ -117,6 +128,7 @@ figcaption {
 /* Style for list of references */
 .references {
   font-size: 17px;
+  text-indent: 0;
 }
 .references ol {
   counter-reset: item;

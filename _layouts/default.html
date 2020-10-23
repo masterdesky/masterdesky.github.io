@@ -9,7 +9,7 @@
     <!-- Viewport width is slightly bigger, than the page wrapper -->
     <meta 
       name="viewport"
-      content="width=910, initial-scale=1">
+      content="width=1010, initial-scale=1">
     <!-- Add FA icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Add base css to page -->
@@ -55,7 +55,7 @@
   </head>
   <body>
     <!-- Background image in div -->
-    <div class="body-bg"></div>
+    <div id="body-bg"></div>
     <!-- Transparent wrapper rectangle -->
     <div id="page-wrapper">
       <!-- Clickable header image -->
@@ -69,7 +69,7 @@
         {% include soc_icons.html %}
         {{ content }}
 
-        <div class="footer">
+        <div id="footer">
           <p>
             Website created and designed by Balázs Pál - &copy; 2020
           </p>

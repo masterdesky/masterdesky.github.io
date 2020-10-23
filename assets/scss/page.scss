@@ -13,19 +13,18 @@ Original Author
 @import "sass-code-highlight/monokai";
 
 /*
-Using 12pt Latin Modern Roman font for content text
+Using 17pt Latin Modern Roman font for content text
 (This is the most similar to the standard LaTeX (Computer Modern) font in my opinion)
 Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
 */
 @font-face {
   font-family: IndexFont;
-  src: url('/assets/fonts/lmroman12-regular.otf');
+  src: url('/assets/fonts/lmroman17-regular.otf');
   font-display: swap;
 }
 
-html {
-  min-height: 100%;
-  position: relative;
+html, body {
+  height: 100%;
 }
 
 /*
@@ -47,41 +46,41 @@ body {
 }
 */
 
-.body-bg {
+/*
+##  PAGE BASICS
+*/
+/* Blurred, fixed background */
+#body-bg {
   background-image: url('/assets/images/background/background-portal.webp');
+
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 
   -webkit-filter: blur($blurAmount);
   -moz-filter: blur($blurAmount);
   -o-filter: blur($blurAmount);
   -ms-filter: blur($blurAmount);
   filter: blur($blurAmount);
-  transform: scale(1.05);
-  
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
+  transform: scale(1.02);
+
   z-index: -1;
 }
-
-/*
-##  PAGE BASICS
-*/
 /* Dark, transparent rectangle in the center of the page from top to bottom */
 #page-wrapper {
   background-color: $baseColor;
   position: absolute;
-  width: 900px;  // Don't forget to change the viewport size in deafult.html to width+10px!!!
+  width: 1000px;  // Don't forget to change the viewport size in deafult.html to width+10px!!!
   margin: auto;
   top: 0;
   left: 0;
   right: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 2;
   overflow: visible;
 }
-
 /* Header image div inside the "page wrapper" transparent rectangle */
 #header-image-container {
   width: 90%;
@@ -95,15 +94,14 @@ body {
   max-width: 100%;
   max-height: 100%;
 }
-
 /* Footer settings */
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: $footerHeight;
+#footer {
   background-color: $baseColor;
+  position: fixed;
+  height: $footerHeight;
+  width: 100%;
+  bottom: 0;
+  left: 0;
   color: $mainColor;
   text-align: center;
 }
@@ -156,36 +154,37 @@ body {
 */
 h1 {
   color: $mainColor;
-  font-size: 36px;
+  font-size: 42px;
   font-weight: bold;
   font-family: 'Lato';
   padding-left: 3%;
 }
 h2 {
   color: $mainColor;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   font-family: 'Lato';
   padding-left: 4%;
 }
 h3 {
   color: $mainColor;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   font-family: 'Lato';
   padding-left: 5%;
 }
 h4 {
   color: $mainColor;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
   font-family: 'Lato';
   padding-left: 6%;
 }
 .index-content {
   color: $textColor;
-  font-size: 20px;
+  font-size: $stdFontSize;
   text-align: justify;
+  text-indent: 0;
   font-family: 'IndexFont';
   padding-top: 30px;
   padding-bottom: $footerHeight;

@@ -112,18 +112,17 @@ pre {
   font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace; }
 
 /*
-Using 12pt Latin Modern Roman font for content text
+Using 17pt Latin Modern Roman font for content text
 (This is the most similar to the standard LaTeX (Computer Modern) font in my opinion)
 Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
 */
 @font-face {
   font-family: IndexFont;
-  src: url("/assets/fonts/lmroman12-regular.otf");
+  src: url("/assets/fonts/lmroman17-regular.otf");
   font-display: swap; }
 
-html {
-  min-height: 100%;
-  position: relative; }
+html, body {
+  height: 100%; }
 
 /*
 body {
@@ -143,35 +142,36 @@ body {
   //filter: blur(5px);
 }
 */
-.body-bg {
-  background-image: url("/assets/images/background/background-portal.webp");
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
-  transform: scale(1.05);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  z-index: -1; }
-
 /*
 ##  PAGE BASICS
 */
+/* Blurred, fixed background */
+#body-bg {
+  background-image: url("/assets/images/background/background-portal.webp");
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+  transform: scale(1.02);
+  z-index: -1; }
+
 /* Dark, transparent rectangle in the center of the page from top to bottom */
 #page-wrapper {
   background-color: rgba(4, 12, 21, 0.604);
   position: absolute;
-  width: 900px;
+  width: 1000px;
   margin: auto;
   top: 0;
   left: 0;
   right: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 2;
   overflow: visible; }
 
 /* Header image div inside the "page wrapper" transparent rectangle */
@@ -188,13 +188,13 @@ body {
   max-height: 100%; }
 
 /* Footer settings */
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
+#footer {
   background-color: rgba(4, 12, 21, 0.604);
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
   color: #ffcc00;
   text-align: center; }
 
@@ -243,36 +243,37 @@ body {
 */
 h1 {
   color: #ffcc00;
-  font-size: 36px;
+  font-size: 42px;
   font-weight: bold;
   font-family: 'Lato';
   padding-left: 3%; }
 
 h2 {
   color: #ffcc00;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   font-family: 'Lato';
   padding-left: 4%; }
 
 h3 {
   color: #ffcc00;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   font-family: 'Lato';
   padding-left: 5%; }
 
 h4 {
   color: #ffcc00;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
   font-family: 'Lato';
   padding-left: 6%; }
 
 .index-content {
   color: #fafaff;
-  font-size: 20px;
+  font-size: 21px;
   text-align: justify;
+  text-indent: 0;
   font-family: 'IndexFont';
   padding-top: 30px;
   padding-bottom: 50px;

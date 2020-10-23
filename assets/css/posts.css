@@ -91,6 +91,16 @@ hPost {
   width: auto;
   cursor: zoom-out; }
 
+.post-content {
+  color: #fafaff;
+  font-size: 21px;
+  text-align: justify;
+  text-indent: 1.5em;
+  font-family: 'IndexFont';
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin: 30px; }
+
 figcaption {
   font-size: 18px; }
 
@@ -113,7 +123,8 @@ figcaption {
 
 /* Style for list of references */
 .references {
-  font-size: 17px; }
+  font-size: 17px;
+  text-indent: 0; }
 
 .references ol {
   counter-reset: item;
