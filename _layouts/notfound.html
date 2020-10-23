@@ -10,14 +10,8 @@
     <meta 
       name="viewport"
       content="width=1010, initial-scale=1">
-    <!-- Add FA icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Add base css to page -->
     <link rel="stylesheet" type="text/css" href="/assets/css/page.css">
-    <!-- Add css for social icons -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css">
-    <!-- Add css for zooming in or out images -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/posts.css">
 
     <link rel="icon" href="/assets/images/icons/icon.svg">
     <link rel="mask-icon" href="/assets/images/icons/mask-icon.svg" color="#000000">
@@ -55,10 +49,9 @@
   </head>
   <body>
     <!-- Background image in div -->
-    <div id="body-bg">
-    </div>
-    <!-- Transparent wrapper rectangle -->
-    <div id="page-wrapper">
+    <div id="body-bg"></div>
+    <!-- Special wrapper for 404 page -->
+    <div id="notfound-wrapper">
       <!-- Clickable header image -->
       <div id="header-image-container">
         <a href="/">
@@ -66,8 +59,6 @@
         </a>
       </div>
 
-      {% include navigation.html %}
-      {% include soc_icons.html %}
       {{ content }}
 
       <div id="footer">

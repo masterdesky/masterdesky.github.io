@@ -121,7 +121,7 @@ Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
   src: url("/assets/fonts/lmroman17-regular.otf");
   font-display: swap; }
 
-html, body {
+html {
   height: 100%; }
 
 /*
@@ -133,17 +133,14 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-
-  // Blur effect
-  //-webkit-filter: blur(5px);
-  //-moz-filter: blur(5px);
-  //-o-filter: blur(5px);
-  //-ms-filter: blur(5px);
-  //filter: blur(5px);
 }
 */
 /*
-##  PAGE BASICS
+####################################
+##  
+## 1. BASIC PAGE ELEMENTS
+##
+####################################
 */
 /* Blurred, fixed background */
 #body-bg {
@@ -195,11 +192,15 @@ body {
   width: 100%;
   bottom: 0;
   left: 0;
-  color: #ffcc00;
-  text-align: center; }
+  text-align: center;
+  color: #ffcc00; }
 
 /*
-##  NAVIGATION BAR
+####################################
+##  
+## 2. NAVIGATION BAR
+##
+####################################
 */
 .menu {
   text-align: center;
@@ -217,16 +218,16 @@ body {
 /* Menu links */
 .menu a:link {
   text-decoration: none;
-  color: #ffcc00;
   text-transform: uppercase;
+  color: #ffcc00;
   font-size: 14px;
   font-weight: bold;
   font-family: 'Lato'; }
 
 .menu a:visited {
   text-decoration: none;
-  color: #ffcc00;
   text-transform: uppercase;
+  color: #ffcc00;
   font-size: 14px;
   font-weight: bold;
   font-family: 'Lato'; }
@@ -239,7 +240,11 @@ body {
   color: #af89be; }
 
 /*
-##  TEXT CONTENT ON PAGES
+####################################
+##  
+## 3. TEXT CONTENT ON REGULAR PAGES
+##
+####################################
 */
 h1 {
   color: #ffcc00;
@@ -270,10 +275,10 @@ h4 {
   padding-left: 6%; }
 
 .index-content {
-  color: #fafaff;
-  font-size: 21px;
   text-align: justify;
   text-indent: 0;
+  color: #fafaff;
+  font-size: 21px;
   font-family: 'IndexFont';
   padding-top: 30px;
   padding-bottom: 50px;
@@ -294,3 +299,50 @@ a:hover {
 a:active {
   color: #af89be;
   text-decoration: underline; }
+
+/*
+####################################
+##  
+## 4. 404 NOT FOUND PAGE
+##
+####################################
+*/
+#notfound-wrapper {
+  position: absolute;
+  width: 1000px;
+  height: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  overflow: visible; }
+
+.notfound-404 {
+  background-color: rgba(4, 12, 21, 0.604);
+  height: 480px;
+  width: 640px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 100px;
+  box-shadow: 0px 0px 15px 0px rgba(250, 250, 255, 0.4);
+  /* h-offset  v-offset  blur  spread  color */ }
+
+.text-404 {
+  text-align: center;
+  color: #ffcc00;
+  font-size: 120px;
+  font-family: 'Lato';
+  margin-bottom: 10px; }
+
+.text-under-404 {
+  text-align: center;
+  color: #fafaff;
+  font-size: 30px;
+  font-family: 'IndexFont';
+  margin-top: 10px; }

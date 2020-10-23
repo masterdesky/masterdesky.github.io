@@ -23,7 +23,7 @@ Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
   font-display: swap;
 }
 
-html, body {
+html {
   height: 100%;
 }
 
@@ -36,18 +36,15 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-
-  // Blur effect
-  //-webkit-filter: blur(5px);
-  //-moz-filter: blur(5px);
-  //-o-filter: blur(5px);
-  //-ms-filter: blur(5px);
-  //filter: blur(5px);
 }
 */
 
 /*
-##  PAGE BASICS
+####################################
+##  
+## 1. BASIC PAGE ELEMENTS
+##
+####################################
 */
 /* Blurred, fixed background */
 #body-bg {
@@ -102,12 +99,16 @@ body {
   width: 100%;
   bottom: 0;
   left: 0;
-  color: $mainColor;
   text-align: center;
+  color: $mainColor;
 }
 
 /*
-##  NAVIGATION BAR
+####################################
+##  
+## 2. NAVIGATION BAR
+##
+####################################
 */
 .menu {
   text-align: center;
@@ -126,16 +127,16 @@ body {
 /* Menu links */
 .menu a:link {
   text-decoration: none;
-  color: $mainColor;
   text-transform: uppercase;
+  color: $mainColor;
   font-size: 14px;
   font-weight: bold;
   font-family: 'Lato';
 }
 .menu a:visited {
   text-decoration: none;
-  color: $mainColor;
   text-transform: uppercase;
+  color: $mainColor;
   font-size: 14px;
   font-weight: bold;
   font-family: 'Lato';
@@ -150,7 +151,11 @@ body {
 
 
 /*
-##  TEXT CONTENT ON PAGES
+####################################
+##  
+## 3. TEXT CONTENT ON REGULAR PAGES
+##
+####################################
 */
 h1 {
   color: $mainColor;
@@ -181,10 +186,10 @@ h4 {
   padding-left: 6%;
 }
 .index-content {
-  color: $textColor;
-  font-size: $stdFontSize;
   text-align: justify;
   text-indent: 0;
+  color: $textColor;
+  font-size: $stdFontSize;
   font-family: 'IndexFont';
   padding-top: 30px;
   padding-bottom: $footerHeight;
@@ -206,4 +211,58 @@ a:hover {
 a:active {
   color: $linkClickColor;
   text-decoration: underline;
+}
+
+/*
+####################################
+##  
+## 4. 404 NOT FOUND PAGE
+##
+####################################
+*/
+#notfound-wrapper {
+  position: absolute;
+  width: 1000px;  // Don't forget to change the viewport size in deafult.html to width+10px!!!
+  height: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  overflow: visible;
+}
+
+.notfound-404 {
+  background-color: $baseColor;
+  height: 480px;
+  width: 640px;
+  
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+  border-radius: 100px;
+  box-shadow: 0px 0px 15px 0px $shadowColor; /* h-offset  v-offset  blur  spread  color */
+}
+.text-404 {
+  text-align: center;
+  color: $mainColor;
+
+  font-size: 120px;
+  font-family: 'Lato';
+
+  margin-bottom: 10px
+}
+.text-under-404 {
+  text-align: center;
+  color: $textColor;
+
+  font-size: 30px;
+  font-family: 'IndexFont';
+
+  margin-top: 10px
 }
