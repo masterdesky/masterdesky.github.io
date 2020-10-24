@@ -61,7 +61,12 @@ body {
   -o-filter: blur($blurAmount);
   -ms-filter: blur($blurAmount);
   filter: blur($blurAmount);
-  transform: scale(1.02);
+  
+  -webkit-transform: scale($scaleAmount);
+  -moz-transform: scale($scaleAmount);
+  -o-transform: scale($scaleAmount);
+  -ms-transform: scale($scaleAmount);
+  transform: scale($scaleAmount);
 
   z-index: -1;
 }
