@@ -110,7 +110,8 @@ pre {
   background-color: "#272822";
   color: whitesmoke;
   padding: 15px;
-  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace; }
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+  text-indent: 0; }
 
 /*
 Using 17pt Latin Modern Roman font for content text
@@ -251,6 +252,16 @@ body {
 ##
 ####################################
 */
+.index-content {
+  text-align: justify;
+  text-indent: 0;
+  color: #fafaff;
+  font-size: 21px;
+  font-family: 'IndexFont';
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin: 30px; }
+
 h1 {
   color: #ffcc00;
   font-size: 42px;
@@ -278,16 +289,6 @@ h4 {
   font-weight: bold;
   font-family: 'Lato';
   padding-left: 6%; }
-
-.index-content {
-  text-align: justify;
-  text-indent: 0;
-  color: #fafaff;
-  font-size: 21px;
-  font-family: 'IndexFont';
-  padding-top: 30px;
-  padding-bottom: 50px;
-  margin: 30px; }
 
 /* Configure general links */
 a:link {

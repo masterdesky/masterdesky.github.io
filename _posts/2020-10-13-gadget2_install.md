@@ -10,7 +10,7 @@ featured-image-alt: The famous Millennium Simulation of GADGET2 from 2005
 The GADGET-2 (<i>GAlaxies with Dark matter and Gas intEracT</i> - 2) is the name given to the second iteration of the software written by Volker Springel for cosmological N-body and SPH simulations. Here I'll summarize the steps, how to download, install and run the software on a Linux computer.
 </b>
 
-## I. Prerequisites
+## I. Prequisites
 ### Download necessary files
 First of all, if you want to work with the GADGET-2 software, I advise you to consider using a computer running under Linux or MacOS. However it is possible to install GADGET-2 on Windows (somehow), it is much easier to do it on Linux, or Mac. Also in this tutorial, all the steps will be done on a Linux computer. Since there are numerous different Linux distributions out there, and because I'm particularly running Kali Linux, there is a slight chance for errors and anomalies to occur on systems other than mine. This tutorial is completely optimized to run on my system in particular, but $99.9\%$ that it will run on other Linux systems too. Also I'll only go into details of the manual installation from sources, without using Homebrew, or other similar package managers (except for HDF5).
 
@@ -21,7 +21,7 @@ As it is noted in the [User guide](https://wwwmpa.mpa-garching.mpg.de/gadget/use
 4. [FFTW 2.1.5](http://www.fftw.org/fftw-2.1.5.tar.gz) (Needed for MPI capability)
 5. HDF5 >5.0 (Downloaded and installed from terminal, detailed in the next section)
 
-### Install prerequisites
+### Install prequisites
 First you'll need to extract all the (currently only 4) downloaded zipped files. Considering, that you've downloaded them in the directory `~/Downloads/`, you can unzip all packages by the following commands after opening a terminal there:
 ```bash
 user@hostname:~/Downloads/$ tar -xzf gadget-2.0.7.tar.gz
@@ -328,7 +328,6 @@ If you made sure that you set all the parameters correctly in the `Makefile`, yo
 ```bash
 user@hostname:~/GADGET2/Gadget2/$ make |& tee m.txt
 ```
-
 If everything went as it was supposed to be, then `make` will automatically create an executable called `Gadget2` in the same directory, which can be finally used to run simulations.
 
 ## III. Run GADGET-2 simulations
@@ -348,7 +347,7 @@ You can now edit the `galaxy.param` file inside the `/Simulations/galaxy` direct
 InitCondFile  	   /path/to/GADGET2/ICs/galaxy_littleendian.dat
 OutputDir          /path/to/GADGET2/Simulations/galaxy/
 ```
-Search for the `Code options` block and change the `SnapFormat` variables value `1` to `3`:
+Search for the `Code options` block and change the `SnapFormat` value to `3`:
 
 ```bash
 % Code options
@@ -359,7 +358,7 @@ ComovingIntegrationOn    0
 ```
 This will tell the simulation to save snapshot files in `.hdf5` format which can be handled with Python later.
 
-GADGET-2 works by taking a "snapshot" of the simulation at certain intervals, and saving the coordinates and velocities of the simulated particles into a file. The shorter this interval is, the better and more continuous our sample will be. The length of this can be changed in the line
+GADGET-2 works by taking a "snapshot" of the simulation at certain intervals, and saving the coordinates and velocities of the simulated particles into a file. The shorter this interval is, the better and more continuous our sample will be. The length of this can be changed in the `Output freqency` block in the line
 
 ```bash
 % Output frequency
@@ -379,6 +378,5 @@ user@hostname:~/GADGET2/Simulations/galaxy/$ mpirun -np 4 ./Gadget2 galaxy.param
 The number after the `-np` switch defines on how many CPU cores GADGET-2 will use for the simulation. Since my CPU has 4 cores, I set the values for the `-np` switch accordingly. GADGET-2 will create a lot of debug and helper files in the same directory, along all of the snapshot files.
 
 With these values the final snapshot files were loaded in `Python` with the `h5py` library and was animated using `matplotlib`'s built-in animation functionality. The final animation can be seen on this YouTube video:
-
 
 <iframe src="https://www.youtube.com/embed/KW0yIkPPymI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

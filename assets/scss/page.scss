@@ -162,6 +162,17 @@ body {
 ##
 ####################################
 */
+.index-content {
+  text-align: justify;
+  text-indent: 0;
+  color: $textColor;
+  font-size: $stdFontSize;
+  font-family: 'IndexFont';
+  padding-top: 30px;
+  padding-bottom: $footerHeight;
+  margin: $marginSize;
+}
+
 h1 {
   color: $mainColor;
   font-size: 42px;
@@ -189,16 +200,6 @@ h4 {
   font-weight: bold;
   font-family: 'Lato';
   padding-left: 6%;
-}
-.index-content {
-  text-align: justify;
-  text-indent: 0;
-  color: $textColor;
-  font-size: $stdFontSize;
-  font-family: 'IndexFont';
-  padding-top: 30px;
-  padding-bottom: $footerHeight;
-  margin: $marginSize;
 }
 
 /* Configure general links */
