@@ -44,7 +44,8 @@ hPost {
   background-color: #00000000;
   border: 2px solid rgba(250, 250, 255, 0.4);
   border-radius: 25px;
-  height: 400px;
+  width: 650px;
+  height: 325px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
