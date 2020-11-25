@@ -46,7 +46,7 @@ body {
 ##
 ####################################
 */
-/* Blurred, fixed background */
+/* Fixed background */
 #body-bg {
   background-image: url('/assets/images/background/background-portal.webp');
 
@@ -55,18 +55,6 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-
-  -webkit-filter: blur($blurAmount);
-  -moz-filter: blur($blurAmount);
-  -o-filter: blur($blurAmount);
-  -ms-filter: blur($blurAmount);
-  filter: blur($blurAmount);
-  
-  -webkit-transform: scale($scaleAmount);
-  -moz-transform: scale($scaleAmount);
-  -o-transform: scale($scaleAmount);
-  -ms-transform: scale($scaleAmount);
-  transform: scale($scaleAmount);
 
   z-index: -1;
 }

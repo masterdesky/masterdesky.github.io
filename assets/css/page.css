@@ -144,7 +144,7 @@ body {
 ##
 ####################################
 */
-/* Blurred, fixed background */
+/* Fixed background */
 #body-bg {
   background-image: url("/assets/images/background/background-portal.webp");
   position: fixed;
@@ -152,16 +152,6 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
-  filter: blur(3px);
-  -webkit-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-  -o-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  transform: scale(1.02);
   z-index: -1; }
 
 /* Dark, transparent rectangle in the center of the page from top to bottom */
