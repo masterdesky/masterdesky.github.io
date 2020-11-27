@@ -33,12 +33,24 @@
           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
           processEscapes: true
         },
-        menuSettings: {
-          zoom: "Click"
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
         },
         SVG: {
-          linebreaks: { automatic:true },
+          styles: {
+            ".mjx-svg-href": {
+              fill: "rgba(255,204,0,1)", stroke: "rgba(255,204,0,1)"
+            },
+          },
+          linebreaks: {
+            automatic:true
+          },
           font: "Latin-Modern"
+        },
+        menuSettings: {
+          zoom: "DoubleClick"
         },
         MathZoom: {
           styles: {
