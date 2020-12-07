@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*
+CSS for the pageination page
+
+Original Author
+    Balázs Pál
+    2020 - 
+*/
+/*
+Different globally used variable for the SASS/SCSS of masterdesky.github.io
+
+Original Author
+    Balázs Pált
+    2020 - 
+*/
+/*
+Using 17pt Latin Modern Roman font for content text
+(This is the most similar to the standard LaTeX (Computer Modern) font in my opinion)
+Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
+*/
+@font-face {
+  font-family: IndexFont;
+  src: url("/assets/fonts/lmroman17-regular.otf");
+  font-display: swap; }
+
+/* Color variables */
+/* Size variables */
+/* Transform */
+.pagination a, .pagination span {
+  padding: 7px 18px;
+  border: 1px solid #ffffee;
+  border-radius: 10px;
+  margin-left: -2px;
+  margin-right: -2px;
+  background-color: #282923;
+  display: inline-block; }
+
+.pagination {
+  text-align: center; }

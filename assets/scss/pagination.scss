@@ -1,0 +1,24 @@
+/*
+CSS for the pageination page
+
+Original Author
+    Balázs Pál
+    2020 - 
+*/
+
+// Import global constants and variables
+@import "constants/variables";
+
+.pagination a, .pagination span {
+    padding: 7px 18px;
+    border: 1px solid $postColor;
+    border-radius: 10px;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: $codeBlockColor;
+    display: inline-block;
+  }
+
+.pagination {
+    text-align: center;
+ }

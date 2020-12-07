@@ -10,18 +10,7 @@ Original Author
 @import "constants/variables";
 
 // Import code highlighting
-@import "sass-code-highlight/monokai";
-
-/*
-Using 17pt Latin Modern Roman font for content text
-(This is the most similar to the standard LaTeX (Computer Modern) font in my opinion)
-Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
-*/
-@font-face {
-  font-family: IndexFont;
-  src: url('/assets/fonts/lmroman17-regular.otf');
-  font-display: swap;
-}
+@import "sass-code-highlight/default";
 
 html {
   height: 100%;
@@ -85,13 +74,19 @@ body {
   max-height: 100%;
 }
 /* Footer settings */
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
 #footer {
   background-color: $baseColor;
-  position: fixed;
+  font-size: $stdFontSize;
+  font-family: 'IndexFont';
+  font-weight: bold;
   height: $footerHeight;
-  width: 100%;
-  bottom: 0;
-  left: 0;
   text-align: center;
   color: $mainColor;
 }
@@ -205,58 +200,4 @@ a:hover {
 a:active {
   color: $linkClickColor;
   text-decoration: underline;
-}
-
-/*
-####################################
-##  
-## 4. 404 NOT FOUND PAGE
-##
-####################################
-*/
-#notfound-wrapper {
-  position: absolute;
-  width: 1000px;  // Don't forget to change the viewport size in deafult.html to width+10px!!!
-  height: 100%;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
-  overflow: visible;
-}
-
-.notfound-404 {
-  background-color: $baseColor;
-  height: 480px;
-  width: 640px;
-  
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  
-  border-radius: 100px;
-  box-shadow: 0px 0px 15px 0px $shadowColor; /* h-offset  v-offset  blur  spread  color */
-}
-.text-404 {
-  text-align: center;
-  color: $mainColor;
-
-  font-size: 120px;
-  font-family: 'Lato';
-
-  margin-bottom: 10px
-}
-.text-under-404 {
-  text-align: center;
-  color: $textColor;
-
-  font-size: 30px;
-  font-family: 'IndexFont';
-
-  margin-top: 10px
 }

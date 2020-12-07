@@ -13,6 +13,16 @@ Original Author
     Balázs Pált
     2020 - 
 */
+/*
+Using 17pt Latin Modern Roman font for content text
+(This is the most similar to the standard LaTeX (Computer Modern) font in my opinion)
+Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
+*/
+@font-face {
+  font-family: IndexFont;
+  src: url("/assets/fonts/lmroman17-regular.otf");
+  font-display: swap; }
+
 /* Color variables */
 /* Size variables */
 /* Transform */

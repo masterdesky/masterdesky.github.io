@@ -6,6 +6,17 @@ Original Author
     2020 - 
 */
 
+/*
+Using 17pt Latin Modern Roman font for content text
+(This is the most similar to the standard LaTeX (Computer Modern) font in my opinion)
+Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
+*/
+@font-face {
+  font-family: IndexFont;
+  src: url('/assets/fonts/lmroman17-regular.otf');
+  font-display: swap;
+}
+
 /* Color variables */
 $baseColor: rgba(4, 12, 21, 0.604);
 $mainColor: rgba(255,204,0,1);
@@ -13,9 +24,11 @@ $postColor: rgba(255,255,238,1);
 $textColor: rgba(250,250,255,1);
 $linkClickColor: rgba(175,137,190,1);
 $shadowColor: rgba(250,250,255,0.4);
+$codeBlockColor: rgba(40,41,35,1);
 
 /* Size variables */
 $stdFontSize: 21px;
+$codeFontSize: 14px;
 $marginSize: 30px;
 $footerHeight: 50px;
 

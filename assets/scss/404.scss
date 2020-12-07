@@ -1,0 +1,57 @@
+/*
+CSS for 404 page on masterdesky.github.io
+
+Original Author
+    Balázs Pál
+    2020 - 
+*/
+
+// Import global constants and variables
+@import "constants/variables";
+
+#notfound-wrapper {
+  position: absolute;
+  width: 1000px;  // Don't forget to change the viewport size in deafult.html to width+10px!!!
+  height: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  overflow: visible;
+}
+
+.notfound-404 {
+  background-color: $baseColor;
+  height: 480px;
+  width: 640px;
+  
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+  border-radius: 100px;
+  box-shadow: 0px 0px 15px 0px $shadowColor; /* h-offset  v-offset  blur  spread  color */
+}
+.text-404 {
+  text-align: center;
+  color: $mainColor;
+
+  font-size: 120px;
+  font-family: 'Lato';
+
+  margin-bottom: 10px
+}
+.text-under-404 {
+  text-align: center;
+  color: $textColor;
+
+  font-size: 30px;
+  font-family: 'IndexFont';
+
+  margin-top: 10px
+}

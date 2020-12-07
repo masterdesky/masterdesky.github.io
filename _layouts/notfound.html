@@ -12,52 +12,11 @@
       content="width=1010, initial-scale=1">
     <!-- Add base css to page -->
     <link rel="stylesheet" type="text/css" href="/assets/css/page.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/404.css">
 
     <link rel="icon" href="/assets/images/icons/icon.svg">
     <link rel="mask-icon" href="/assets/images/icons/mask-icon.svg" color="#000000">
     <link rel="apple-touch-icon" href="/assets/images/icons/apple-touch-icon.png">
-
-    <!-- Adding MathJax -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-        jax: ["input/TeX", "output/SVG"],
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-          processEscapes: true
-        },
-        TeX: {
-          equationNumbers: {
-            autoNumber: "AMS"
-          }
-        },
-        SVG: {
-          styles: {
-            ".mjx-svg-href": {
-              fill: "rgba(255,204,0,1)", stroke: "rgba(255,204,0,1)"
-            },
-          },
-          linebreaks: {
-            automatic:true
-          },
-          font: "Latin-Modern"
-        },
-        menuSettings: {
-          zoom: "DoubleClick"
-        },
-        MathZoom: {
-          styles: {
-            "#MathJax_Zoom": {
-              "background-color": "#040A13"
-            }
-          }
-        }
-      });
-    </script>
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=default">
-    </script>
   </head>
   <body>
     <!-- Background image in div -->
@@ -73,11 +32,11 @@
 
       {{ content }}
 
-      <div id="footer">
-        <p>
-          Website created and designed by Balázs Pál - &copy; 2020
-        </p>
-      </div>
     </div>
+    <footer>
+      <div id="footer">
+        Website created and designed by Balázs Pál - &copy; 2020
+      </div>
+    </footer>
   </body>
 </html>
