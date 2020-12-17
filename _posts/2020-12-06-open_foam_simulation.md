@@ -32,11 +32,11 @@ Docker runs as <b>root</b> by default. If you want to enable it to a non-root us
 ```console
 user@hostname:~$ sudo usermod -aG docker $(whoami)
 ```
-Where the variable `$(whoami)` can be replaced with the appropriate username, which we want to permit the the usage of the docker to (eg. our own username).
+Where the variable `$(whoami)` can be replaced with the appropriate username, which we want to permit the the usage of the docker to (eg. our own username). For this change to take effect the user should log out and log back in!
 
 #### Step 3. Installing OpenFOAM
 
-OpenFOAM 8 can be downloaded using `wget` from the official [OpenFOAM download site](http://dl.openfoam.org/). For convenient execution we can add it to the user's `PATH` environment variable. The following commands do everything for us: install OpenFOAM to the `/usr/bin/` system-wide directory and give execution permission to its launcher script `openfoam8-linux`:
+OpenFOAM 8 can be downloaded using `wget` from the official [OpenFOAM download site](http://dl.openfoam.org/). For convenient execution from anywhere on the computer we can add it to the user's `PATH` environment variable. The following commands do everything for us: install OpenFOAM to the `/usr/bin/` system-wide directory and give execution permission to its launcher script `openfoam8-linux`:
 
 ```console
 user@hostname:~$ sudo sh -c "wget http://dl.openfoam.org/docker/openfoam8-linux -O /usr/bin/openfoam8-linux"
@@ -44,3 +44,39 @@ user@hostname:~$ sudo chmod 755 /usr/bin/openfoam8-linux
 ```
 
 #### Step 4. Launching OpenFOAM
+In the previous step we installed the Docker version of `openfoam8-linux` executable. When it's launched, it starts inside a Docker container that mounts the directory from where `openfoam8-linux` is launched by default, however mounting the user’s `$HOME` directory isn't allowed. As detailed in the official installation guide, "the mounted directory is represented in the container environment by the `WM_PROJECT_USER_DIR` environment variable, which is set to `$HOME/OpenFOAM/${USER}-8` by default". This means, that it is recommended to start `openfoam8-linux` from inside this `$HOME/OpenFOAM/${USER}-8` directory:
+
+```console
+user@hostname:~$ mkdir -p $HOME/OpenFOAM/${USER}-8
+user@hostname:~$ cd $HOME/OpenFOAM/${USER}-8
+user@hostname:~$ openfoam8-linux
+```
+The variable `$HOME` of course can be replaced with the `~` symbol in the commands above. 
+
+#### Step 5. Testing OpenFOAM
+The official installation guide presents the standard way of testing, whether OpenFOAM was successfully installed or not. All projects (including this test project) should be placed and executed inside the `run` directory, represented with the `$FOAM_RUN` variable. First we need to create this directory:
+
+```console
+[ID for session]: ~> mkdir -p $FOAM_RUN
+```
+Next we download a simple test case and place it in its own directory inside the `run` folder. After that we're generating the mesh for the simulation using the `blockMesh` routine, run the simulation with `simpleFoam` and finally visualize the created checkpoint files using `paraFoam`:
+
+```console
+[ID for session]: ~> cd $FOAM_RUN
+[ID for session]: run> cp -r $FOAM_TUTORIALS/incompressible/simpleFoam/pitzDaily .
+[ID for session]: run> cd pitzDaily
+[ID for session]: pitzDaily> blockMesh
+[ID for session]: pitzDaily> simpleFoam
+[ID for session]: pitzDaily> paraFoam
+```
+
+#### Step 6. Exit Docker and OpenFOAM
+If the steps above executed successfully and every component of OpenFOAM works, we can close OpenFOAM and the container using simply an exit command:
+
+```console
+[ID for session]: ~> exit
+```
+
+## II. Create a mesh for a water droplet simulation in OpenFOAM
+
+## III. The configuration of other dictionary files for the simulation
