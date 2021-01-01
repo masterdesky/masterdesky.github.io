@@ -27,8 +27,8 @@ Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
 /* Size variables */
 /* Transform */
 .pagination a, .pagination span {
-  padding: 7px 18px;
-  border: 1px solid #ffffee;
+  padding: 3px 18px;
+  border: 1px solid rgba(4, 12, 21, 0.604);
   border-radius: 10px;
   margin-left: -2px;
   margin-right: -2px;
