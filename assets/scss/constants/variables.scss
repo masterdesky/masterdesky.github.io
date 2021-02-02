@@ -17,6 +17,15 @@ Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
   font-display: swap;
 }
 
+/*
+One can benefit from using a lineal typeface in headlines in content
+written exclusively using Roman fonts. The reason for this, that however
+it breaks consistency, headlins will still stick out a bit more which
+helps readablity. Henceforth I'm using Helvetical for titles throughout
+the website for titles and headlines.
+*/
+$titleFont: "Helvetica";
+
 /* Color variables */
 $baseColor: rgba(4, 12, 21, 0.604);
 $mainColor: rgba(255,204,0,1);

@@ -23,10 +23,18 @@ Source: http://www.gust.org.pl/projects/e-foundry/latin-modern
   src: url("/assets/fonts/lmroman17-regular.otf");
   font-display: swap; }
 
+/*
+One can benefit from using a lineal typeface in headlines in content
+written exclusively using Roman fonts. The reason for this, that however
+it breaks consistency, headlins will still stick out a bit more which
+helps readablity. Henceforth I'm using Helvetical for titles throughout
+the website for titles and headlines.
+*/
 /* Color variables */
 /* Size variables */
 /* Transform */
 .pagination a, .pagination span {
+  font-family: 'IndexFont';
   padding: 3px 18px;
   border: 1px solid rgba(4, 12, 21, 0.604);
   border-radius: 10px;
